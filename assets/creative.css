@@ -71,38 +71,57 @@ table {
 }
 
 body {
-    width: 200%;
-    overflow: hidden;
+    width: 300%;
+    height: 300vh;
     position: relative;
+    transition: all 2s ease 0s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-#viewport1 {
-    width: 50%;
+h1{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+}
+.viewport {
+    width: calc(100%/3);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .5s ease 0s;
+    flex-basis: calc(100% / 3);
+}
+#viewport1 {
     background: yellow;
     color: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    position: relative;
-    z-index: 1;
-    }
-    h1{
-        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-        font-size: 75px;
-    }
+}
 #viewport2 {
-    width: 50%;
-    height: 100vh;
-    float: left;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    background: orange;
+}
+#viewport3 {
+    background: red;
+}
+#viewport4 {
+    background: purple;
+}
+#viewport5 {
     background: blue;
-    z-index: 2;
-    transition: margin-left 2s;
+}
+#viewport6 {
+    background: brown;
+}
+#viewport7 {
+    background: turquoise;
+}
+#viewport8 {
+    background: fuchsia;
+}
+#viewport9 {
+    background: greenyellow;
 }
 nav {
     position: fixed;

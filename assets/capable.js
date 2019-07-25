@@ -1,8 +1,12 @@
+function viewport3() {
+    var v3Slide = document.body;
+    v3Slide.style.top = "-100vh";
+}
 function viewport2() {
-    var v2Slide = document.getElementById('viewport2');
-    v2Slide.style.marginLeft = "-50%";
+    var v2Slide = document.body;
+    v2Slide.style.left = "-100%";
 }
 function viewport1() {
-    var v1Slide = document.getElementById('viewport2');
-    v1Slide.style.marginLeft = "0%";
+    var v1Slide = document.body;
+    v1Slide.style.left = "0";
 }
